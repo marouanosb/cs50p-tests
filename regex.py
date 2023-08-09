@@ -12,6 +12,9 @@ else:
 username, domain = email.split("@")
 matches = re.search(r"^([a-zA-Z])_?([a-zA-Z])$",username)
 if matches:
-    username = matches.group(1) + " " + matches.group(2)
+    username = matches.group(1) + " " + matches.group(2) ############### /!\
 
 print(f"your name is : {username}")
+
+## re.sub(pattern, replacement, original_str, count, flag) => find and replace following a regex
+## similar tor string.replace()
